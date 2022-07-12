@@ -26,7 +26,6 @@
     font-size: 26px;
     line-height: 1.19;
     /* identical to box height */
-
     letter-spacing: 0.03em;
     color: #2196F3;
         }
@@ -68,10 +67,10 @@
 }
 .hero{
 background: #2F303A;
-
 }
 /* -------- HERO ----------- */
 .main-title{
+    font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -81,45 +80,66 @@ background: #2F303A;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
+        background: #2F303A;
 }
 .modal-btn{
     font-family: 'Roboto';
-    color: #FFFFFF;
-    background: #2196F3;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.88;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 188% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: #2196F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
 }
 .modal-btn:hover,
 .modal-btn:focus{
-  position: absolute;
-    visibility: hidden;
+/* position: absolute; */
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.contact-footer{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        /* or 171% */
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+}
+.contact-footer:hover,
+.contact-footer:focus{
+    color: #2196F3;
 }
 
 /* ---------- DESCRIPTION ------ -- */
-.modal-btn-portfolio {
+
+.modal-btn-portfolio{
     font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        /* identical to box height, or 162% */
-    
-        text-align: center;
-        letter-spacing: 0.03em;
-    
-        color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+      /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
     background: #F5F4FA;
-        border-radius: 4px;
-       
+    border-radius: 4px;    
 }
 
 .modal-btn-portfolio:hover,
-.modal-btn-portfolio:focus {
+.modal-btn-portfolio:focus{
     
     color: #FFFFFF;
     background: #2196F3;}
@@ -163,13 +183,13 @@ background: #2F303A;
   }
   .name{
         font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        /* identical to box height */
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #212121;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.19;
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
   }
   .job{
         font-style: normal;
@@ -190,11 +210,9 @@ font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19px;
+    line-height: 1.19;
     /* identical to box height */
-
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
   }
   .part-logo{
@@ -204,7 +222,6 @@ font-family: 'Raleway';
         font-size: 26px;
         line-height: 1.19px;
         /* identical to box height */
-    
         letter-spacing: 0.03em;
         color: #2196F3;
   }
@@ -225,7 +242,6 @@ font-family: 'Raleway';
         height: 294px;
         left: 215px;
         top: 262px; */
-    
         background: white;
   }
   .service-name{
@@ -234,9 +250,7 @@ font-family: 'Raleway';
         font-size: 18px;
         line-height: 2;
         /* identical to box height, or 200% */
-    
         letter-spacing: 0.06em;
-    
         color: #212121;
   }
   .direction{
@@ -245,7 +259,5 @@ font-family: 'Raleway';
             font-size: 16px;
             line-height: 1.88;
             /* identical to box height, or 188% */
-        
             letter-spacing: 0.03em;
-        
             color: #757575;}
