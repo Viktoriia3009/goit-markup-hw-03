@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css"/>
 
 </head>
@@ -21,14 +21,14 @@
                 <img class="logo-image " src=""><span class="part-logo">Web</span>Studio</img>
             </a>
             <ul class="menu list page-header-container ">
-                <li class="menu-item"> <a class="menu-link link" href="">Студия</a></li>
-                <li class="menu-item"> <a class="menu-link link" href="index portfolio.html">Портфолио</a></li>
-                <li class="menu-item"> <a class="menu-link link" href="">Контакты</a></li>
+                <li class=" menu-item"> <a class="menu-link link" href="">Студия</a></li>
+                <li class=" menu-item"> <a class="menu-link link" href="index portfolio.html">Портфолио</a></li>
+                <li class=" menu-item"> <a class="menu-link link" href="">Контакты</a></li>
             </ul>
         </nav>
         <ul class="list contact page-header-container">
-        <li><a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-        <li><a class=" link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="menu-contact"><a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+        <li class="menu-contact"><a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
    <!--------      HERO ----------->
     </header>
@@ -41,21 +41,21 @@
         </section>
         <!----------     DESCRIPTION ------ -->
         <section class=" container">
-            <ul class=" details list ">
+            <ul class="details  list ">
                 <li>
-                    <h3 class="points">Внимание к деталям</h3>
+                    <h3>Внимание к деталям</h3>
                     <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li>
-                    <h3 class="points">Пунктуальность</h3>
+                    <h3>Пунктуальность</h3>
                     <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li>
-                    <h3 class="points">Планирование</h3>
+                    <h3>Планирование</h3>
                     <p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li>
-                    <h3 class="points">Современные технологии</h3>
+                    <h3>Современные технологии</h3>
                     <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
@@ -80,8 +80,9 @@
         </section>
         <!-- -------TEAM------- -->
         <section class="team-background">
-            <h2 class=" container our-team"> Наша команда </h2>
-            <ul class="list team container">
+            <div class="container our-team">
+            <h2 > Наша команда </h2>
+            <ul class="list team">
                 <li class="card" >
                     <img  src="./images/employees/ihor.jpg" alt=" дизайнера" width="270" height="260" />
                     <h3 class="name">Игорь Демьяненко</h3>
@@ -103,21 +104,22 @@
                     <p class="job" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- ------FOOTER----- -->
     <footer class="link footer">
-        <div class="container">
+        <div class="container ">
         <a class="logotyp-footer link" href=""><span class="part-logo">Web</span>Studio</a>
         <address>
             <ul class="list ">
-                <li >
-                 <a class="address  link" href="https://goo.gl/maps/azbWTrfFAkUfDFu67" target="_blank" rel="noopener noreferrer"> г. Киев,
+                <li class="location-address" >
+                 <a class="address link" href="https://goo.gl/maps/azbWTrfFAkUfDFu67" target="_blank" rel="noopener noreferrer"> г. Киев,
                   пр-т Леси Украинки, 26 </a></li>
-                <li>
-                  <a class="link contact " href="mailto:info@example.com">info@example.com </a></li>
-                <li >
-                 <a class=" link contact " href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li class="location-contact">
+                  <a class="link contact-footer" href="mailto:info@example.com">info@example.com </a></li>
+                <li class="location-contact">
+                 <a class="link contact-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
         </div>

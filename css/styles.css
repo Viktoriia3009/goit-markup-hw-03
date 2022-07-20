@@ -116,7 +116,6 @@ body{
 }
 /* -------- HERO ----------- */
 .main-title{
-    /* font-style: normal; */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -125,13 +124,10 @@ body{
     color: #FFFFFF;
     background: #2F303A;  
     width: 1200;
-    margin-left: 289px;
-    margin-right: 289px;
     text-align: center;
-    /* margin-left: auto;
-    margin-right: auto; */
-    padding-left: 15;
-    padding-right: 15;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
 }
 .modal-btn{
     padding-top: 10px;
@@ -154,50 +150,48 @@ body{
 }
 .details{
     display: flex;
-}
-.points{
     padding-top: 94px;
 }
 .description{
 padding-top: 10px;
 margin-right: 30px;
 }
-.our-team{
+.services{
     padding-top: 94px;
-    margin-bottom: 50px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;     
+    padding-bottom:94px ;
 }
 h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .images {
-    /* margin-right: 30px; */
-    display: flex;
-    /* width: 370px;
-    height: 294px; */
-    /* left: 215px; */
-    margin-bottom: 94px;
+    display: flex;  
 }
 .images-indent{
     margin-right: 30px;
 }
+.team-background {
+    background: #F5F4FA;
+}
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+} 
 .team {
-display: flex;
+    display: flex;
 }
 .card{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
-    margin-bottom: 94px;
 }
 .name {
     font-style: normal;
@@ -219,25 +213,6 @@ display: flex;
     /* identical to box height */
     text-align: center;
     color: #757575;
-}
-.team-background{
-    background: #F5F4FA;
-}
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.contact-footer{
-    font-style: normal;
-        font-weight: 400;
-        line-height: 1.71;
-        /* or 171% */
-        color: rgba(255, 255, 255, 0.6);       
-}
-.contact-footer:hover,
-.contact-footer:focus
-{
-    color: #2196F3;
 }
 /* ---------- DESCRIPTION ------ -- */
 .points{
@@ -263,8 +238,11 @@ display: flex;
     color: #212121;
   }
   /* -- ------FOOTER----- -- */
+ 
   .footer{
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .logotyp-footer{
     font-family: 'Raleway';
@@ -274,7 +252,6 @@ display: flex;
     line-height: 1.19;
     /* identical to box height */
     color: #FFFFFF;
-    margin-bottom: 20px;
   }
   .part-logo{
     font-family: 'Raleway';
@@ -289,20 +266,40 @@ display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
     color: #FFFFFF;
   }
+  .location-address{
+    margin-top: 20px;
+  }
+  .contact-footer{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+  }
+  .location-contact{
+    margin-top: 9px;
+  }
+   .contact-footer:hover,
+   .contact-footer:focus {
+    color: #2196F3;
+   }
   
   /* ============СТИЛИ ДЛЯ ПОРТФОЛИО========== */
- 
-  
+ .frame{
+    border: 1px solid #ECECEC;
+ }
+ .content{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
   .buttons-container{
     display: flex;
     justify-content: center; 
+    margin-bottom: 50px;
   }
   .buttons-location:not(:last-child){
-    /* margin-top: 94px;
-    margin-bottom: 50px; */
     margin-right: 8px;
   }
   .modal-btn-portfolio {
@@ -311,8 +308,6 @@ display: flex;
       line-height: 1.63;
     /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
         border-radius: 4px;
-        margin-top: 94px;
-        margin-bottom: 50px;
   }
   .modal-btn-portfolio:hover,
   .modal-btn-portfolio:focus {
@@ -320,50 +315,36 @@ display: flex;
       background: #2196F3;
   }
   .list-menu:not(:nth-child(3n)){
-    margin-right: 30px;
+    margin-right: 27px;
   }
   .menu-portfolio{
         display: flex;
         flex-wrap: wrap;
-    /* position: absolute;
-        width: 370px;
-        height: 294px;
-        left: 215px;
-        top: 262px; */
-        background: white;
-        /* border: 1px solid #EEEEEE; */
+        background: white;    
+  }
+  .name-card{
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
   .menu-card{
     box-sizing: border-box;
-        /* position: absolute;
-        width: 370px;
-        height: 404px;
-        left: 615px;
-        top: 1130px;
-        background: #FFFFFF; */
-        border: 1px solid #EEEEEE;
-        margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
   }
   .service-name{
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
-        /* identical to box height, or 200% */
         letter-spacing: 0.06em;
         color: #212121;
-        margin-top: 20px;
-        margin-bottom: 4px;
-        margin-left: 24px;
   }
   .direction{
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.88;
-            /* identical to box height, or 188% */
             color: #757575;
-            margin-bottom: 20px;
-            margin-left: 24px;
         }
             
