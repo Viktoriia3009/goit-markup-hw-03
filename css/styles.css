@@ -317,7 +317,6 @@ h2 {
   .buttons-location:not(:last-child){
     margin-right: 8px
   }
-  
   .modal-btn-portfolio {
       font-weight: 500;
       font-size: 16px;
@@ -351,7 +350,6 @@ h2 {
   .menu-card{
     box-sizing: border-box;
     border: 1px solid #EEEEEE;
-    
   }
   .indent{
     margin-bottom: 30px;
@@ -365,10 +363,10 @@ h2 {
         color: #212121;
   }
   .direction{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.88;
-            color: #757575;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        color: #757575;
         }
             
