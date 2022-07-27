@@ -37,9 +37,14 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.page-header{
+  padding-top:24px ;
+  padding-bottom: 25px ;
+}
 .page-header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 /* --------LOGORYP--------- */
 .logotyp {
@@ -63,45 +68,50 @@ body{
     color: #2196F3;
 }
         /* ---------NAVIGATION--- -- */
+.menu-link:not(:last-child),
 .menu-item:not(:last-child) {
    margin-right: 50px ;
 }
+.page-nav{
+  display: flex;
+}
+.menu-link-icon{
+  margin-right: 10px;
+  fill: currentColor;
+}
 .menu-link {
-    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primery-text-color);
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  color: var(--secondary-text-color);
+}
+.menu-item{
+color: #757575;
 }
 .menu-link:hover,
 .menu-link:focus{
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #2196F3;
+  color: #2196F3;
 }
 .contact{
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #757575;
-        padding-left: 10px;
-        margin-left: auto;
-        margin-right: 50px;
+  color: #757575;
 }
-.contact:hover,
-.contact:focus{
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #2196F3;
+.menu-link-icon{
+  margin-right: 10px;
+  fill: currentColor;
 }
-.contact {
-    fill: currentColor;
-}
+
+/* -------- HERO ----------- */
+
 .hero{
     width: 1200;
     padding-top: 200px;
@@ -114,7 +124,6 @@ body{
     background-size: cover;
     /* background: #C4C4C4; */
 }
-/* -------- HERO ----------- */
 .main-title{
     font-weight: 900;
     font-size: 44px;
@@ -147,13 +156,19 @@ body{
 .modal-btn:focus{
     background: #188CE8;
 }
-.details{  
-    padding-top: 94px;
-}
+
+/* -------rectangle-------- */
+
 .location-details{
 display: flex;
+justify-content: center;
+padding-top: 94px;
+}
+.location-rectangle:not(:last-child) {
+  margin-right: 30px;
 }
 .uppercase{
+  display: flex;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -177,6 +192,8 @@ margin-right: 30px;
     background: #F5F4FA;
     border-radius: 4px;
 }
+
+/* ----------------------------------------- */
 .services{
     padding-top: 94px;
     padding-bottom:94px ;
@@ -290,6 +307,7 @@ padding-bottom: 30px;
     line-height: 1.17;
     color: #212121;
   }
+  /* --------------------------------------------------------- */
   .clients{ 
     font-style: normal;
     font-weight: 700;
@@ -306,7 +324,6 @@ padding-bottom: 30px;
   .clients-icon-location{
     display: flex;
     padding-bottom: 94px;
-    color: #AFB1B8;
   }
   .clients-icon{
     display: flex;
@@ -314,19 +331,19 @@ padding-bottom: 30px;
     align-items: center;
     width: 170px;
     height: 92px;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 } 
-.clients-icon{
-    fill: currentColor;
-}
   .clients-icon:hover,
   .clients-icon:focus{
     color: #2196F3;
-    border: 1px solid#2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
   }
-
-
+  .clients-icon {
+    fill: currentColor;
+    }
   /* -- ------FOOTER----- -- */
  
   .footer{
@@ -373,7 +390,7 @@ padding-bottom: 30px;
     margin-top: 9px;
   }
    .contact-footer:hover,
-   .contact-footer:focus {
+   .contact-footer:focus{
     color: #2196F3;
    }
    .location-footer-media {
@@ -416,8 +433,13 @@ padding-bottom: 30px;
    }
   
   /* ============СТИЛИ ДЛЯ ПОРТФОЛИО========== */
- .frame{
-    border: 1px solid #ECECEC;
+ 
+ .portfolio-line{
+  /* width: 1600px; */
+    /* height: 0px;
+    left: 0px; */
+    top: 80px;
+    border-bottom: 1px solid #ECECEC;
  }
  .content{
     padding-top: 94px;
@@ -435,17 +457,21 @@ padding-bottom: 30px;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.63;
-    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
       border-radius: 4px;
       padding-top: 6px;
       padding-right: 22px;
       padding-bottom: 6px;
       padding-left: 22px;
+      background: #F5F4FA;
+      border: 1px solid#F5F4FA;
   }
   .modal-btn-portfolio:hover,
   .modal-btn-portfolio:focus {
       color: #FFFFFF;
       background: #2196F3;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      border: 1px solid #2196F3;
   }
   .list-menu:not(:nth-child(3n)){
     margin-right: 27px;
@@ -468,7 +494,6 @@ padding-bottom: 30px;
   .menu-card:hover,
   .menu-card:focus
   {
-    
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
