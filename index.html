@@ -22,7 +22,7 @@
             </a>
             <ul class="menu list ">
                 <li class=" menu-item"> 
-                    <a class="menu-link link" href="./index.html">Студия</a></li>
+                    <a class="menu-link current link" href="./index.html">Студия</a></li>
                 <li class=" menu-item">
                      <a class="menu-link link" href="index portfolio.html">Портфолио</a></li>
                 <li class=" menu-item"> 
@@ -51,7 +51,7 @@
         <section class="hero">
             <div>
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="modal-btn" type="button"> Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open> Заказать услугу</button>
             </div>
         </section>
         <!----------     DESCRIPTION ------ -->
@@ -102,18 +102,33 @@
         <section class=" services ">
            <div class="container">
             <h2>Чем мы занимаемся</h2>
-            <ul class="list images images-indent">
+            <ul class="list images ">
                 <li class="images-indent" >
-                    <img src="./images/specialization/photo-one.jpg" alt=" програмист работающий в офисе" width="370"
+                    <div class="location-label">
+                    <img src="./images/specialization/photo-one.jpg" alt=" Десктопные предложения" width="370"
                         height="294" />
+                        <div class="skill-description">
+                            <h3 class="content-box">Десктопные предложения</h3>
+                        </div>
+                    </div>
                 </li>
                 <li class="images-indent">
-                    <img  src="./images/specialization/photo-two.jpg" alt="процесс разработки" width="370"
+                    <div class="location-label">
+                    <img  src="./images/specialization/photo-two.jpg" alt="Мобильные приложения" width="370"
                         height="294" />
+                        <div class="skill-description">
+                            <h3 class="content-box">Мобильные приложения</h3>
+                        </div>
+                        </div>
                 </li>
-                <li>
-                    <img src="./images/specialization/photo-three.jpg" alt="выбор цвета на графическом планшете"
+                <li class="images-indent" >
+                    <div class="location-label">
+                    <img src="./images/specialization/photo-three.jpg" alt="Дизайнерские решения"
                         width="370" height="294" />
+                        <div class="skill-description">
+                            <h3 class="content-box">Дизайнерские решения</h3>
+                        </div>
+                        </div>
                 </li>
                 </ui>
             </div>
@@ -271,7 +286,6 @@
                                 </svg>
                             </a>
                         </li>
-                    
                     </ul>
                     </div>
                 </li>
@@ -282,43 +296,43 @@
                 <p class="clients">Постоянные клиенты</p>
                 <ul class="clients-icon-location list ">
                     <li class="  menu-client">
-                        <a class="clients-icon " href="">
-                        <svg  width="106"  height="60">
+                        <a class="clients-link " href="">
+                        <svg class="clients-icon" width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-one"> </use>
                         </svg>
                         </a>
                     </li>
                     <li class="menu-client">
-                        <a class="clients-icon" href="">
-                        <svg width="106"  height="60">
+                        <a class="clients-link" href="">
+                        <svg class="clients-icon" width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-wo"> </use>
                         </svg>
                         </a>
                     </li>
                     <li class="menu-client ">
-                        <a class="clients-icon" href="">
-                        <svg width="106"  height="60">
+                        <a class="clients-link" href="">
+                        <svg class="clients-icon" width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-three"> </use>
                         </svg>
                         </a>
                     </li>
                     <li class="menu-client ">
-                        <a class="clients-icon" href="">
-                        <svg width="106"  height="60">
+                        <a class="clients-link" href="">
+                        <svg class="clients-icon" width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-four"> </use>
                         </svg>
                         </a>
                     </li>
                     <li class="menu-client ">
-                        <a class="clients-icon" href="">
-                        <svg width="106"  height="60">
+                        <a class="clients-link" href="">
+                        <svg class="clients-icon" width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-five"> </use>
                         </svg>
                         </a>
                     </li>
                     <li class="menu-client ">
-                        <a class="clients-icon" href="">
-                        <svg width="106"  height="60">
+                        <a class="clients-link" href="">
+                        <svg class="clients-icon"width="106"  height="60">
                             <use href="./images svg/sprite.svg#icon-Logo-six"> </use>
                         </svg>
                         </a>
@@ -380,5 +394,16 @@
             </div>
        </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button tupe="button" class="modal-close-btn" data-modal-close></button>
+         <svg class="modal-close-btn-icon" widht="18" height="18">
+            <use href="./images svg/sprite.svg#icon-Vector"></use>
+         </svg>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
