@@ -589,9 +589,9 @@ transform: translate(0, 0);
     padding-left: 20px;
   }
   .menu-card{
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: calc((100% - 2 * 30px) / 3);
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
   }
   .menu-card:hover,
   .menu-card:focus
@@ -626,12 +626,13 @@ z-index: 100;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.2);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
    }
 .backdrop.is-hidden{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  
 }
 .modal{
   position: absolute;
@@ -643,15 +644,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #FFFFFF;
   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px; */
+  transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
 }   
-.modal-close-btn-icon{
-  position: absolute;
-  display: flex;
-    top: 10px;
-    right: 10px;
-    width: 18px;
-    height: 18px;
-}
+
 .modal-close-btn{
   position: absolute;
   top: 10px;
@@ -665,6 +660,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+}
+.modal-close-btn-icon {
+  position: absolute;
+  /* display: flex; */
+  top: 15px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus{
